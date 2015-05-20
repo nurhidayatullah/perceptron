@@ -88,16 +88,16 @@ class Perceptron{
 
 /////data latih
 $data = array(
-	array(0,0),
-	array(0,1),
-	array(1,0),
-	array(1,1)
+	array(3,2,1),
+	array(1,1,3),
+	array(1,0,0),
+	array(1,1,1)
 	);
-$label = array(0,0,0,1);	// label atau target
+$label = array(1,1,0,1);	// label atau target
 $learning_rate = 1;			// learning rate
 $bias = 0;					// bobot bias awal
 $max_epoh = 10;				// maksimal iterasi
-$weight = array(0,0);		// bobot awal
+$weight = array(0,0,0);		// bobot awal
 
 $nn = new Perceptron();	
 $nn->set_learning_rate($learning_rate);
